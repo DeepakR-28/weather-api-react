@@ -1,0 +1,125 @@
+body {
+  animation: bgc ease-out;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+.container {
+  color: black;
+  background-color: #d1d8e0;
+  padding: 10px;
+  font-family: Arial;
+  width: 60%;
+  height: 80%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 5px grey;
+}
+.input {
+  width: 80%;
+  height: 30px;
+  margin: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  border: 1px solid #ccc;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.label {
+  margin: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  background-color: #2c3a47;
+  border: 0px solid transparent;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+.temperatureContainer {
+  display: flex;
+  flex-direction: row;
+}
+.temp {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  margin: 10% 20% 0% 20%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.error {
+  margin: 0;
+  text-align: center;
+  color: Red;
+  margin-top: 20px;
+}
+
+@keyframes bgc {
+  0% {
+    background-color: rgb(3, 3, 3);
+  }
+  10% {
+    background-color: rgb(32, 32, 32);
+  }
+  20% {
+    background-color: rgb(53, 51, 51);
+  }
+  30% {
+    background-color: rgb(151, 142, 142);
+  }
+  40% {
+    background-color: rgb(187, 187, 187);
+  }
+  50% {
+    background-color: rgb(238, 237, 237);
+  }
+  60% {
+    background-color: rgb(192, 226, 240);
+  }
+  70% {
+    background-color: rgb(99, 199, 238);
+  }
+  80% {
+    background-color: rgb(106, 202, 240);
+  }
+  90% {
+    background-color: rgb(145, 145, 145);
+  }
+  95% {
+    background-color: rgb(70, 68, 68);
+  }
+  100% {
+    background-color: rgb(43, 42, 42);
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 80%;
+    height: 50%;
+    top: 40%;
+  }
+  .temp {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    margin: 10% 20% 0% 19%;
+  }
+}
